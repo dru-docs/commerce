@@ -1,4 +1,4 @@
-# commerce
+# Типовой магазин Drupal-commerce
 
 ## Ресурсы:
 * Фича для типового магазина https://www.drupal.org/project/cmlstarter
