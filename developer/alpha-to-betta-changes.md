@@ -8,4 +8,5 @@
   - удлалён `Drupal\cmlapi\Controller\GetCml`
   - удлалён `Drupal\cmlapi\Controller\GetLastCml`
   - теперь `\Drupal::service('cmlapi.getcml')->`
-* XML-парсер теперь плагин
+* XML-парсер 
+  - теперь сервис
