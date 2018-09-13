@@ -10,3 +10,6 @@
   - теперь `\Drupal::service('cmlapi.getcml')->`
 * XML-парсер 
   - теперь сервис
+* Используемые бандлы (типы) в соответствии с https://www.drupal.org/project/cmlstarter
+  - товар: стало `product` было `default`
+  - товар: стало `variation` было `default`
