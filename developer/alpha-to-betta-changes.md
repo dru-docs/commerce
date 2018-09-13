@@ -4,4 +4,8 @@
   - убран костыль, который правит парента 
   - добавлена поддержка статуса термина
   - место изменений `Drupal\cmlmigrations\Plugin\migrate\source\TaxonomyCatalog`
-* 
+* Сервис получения последнего обмена
+  - удлалён `Drupal\cmlapi\Controller\GetCml`
+  - удлалён `Drupal\cmlapi\Controller\GetLastCml`
+  - теперь `\Drupal::service('cmlapi.getcml')->`
+* XML-парсер теперь плагин
