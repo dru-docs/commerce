@@ -38,6 +38,7 @@
     - {type: []} - получение массива, `Drupal\cmlapi\Service::prepareArray()`
     - {type: 'attr'} - получение атрибута, `Drupal\cmlapi\Service::prepareAttribute()`
     - {type: 'keyval'} - данные ключ-значение, `Drupal\cmlapi\Service::prepareKeyVal()`
+    - {skip: 1} - выключение парсера (то-же самое что удалить строчку)
 * Реализация 
 #### Стандартный мапинг `parser_product`
 ```yml
