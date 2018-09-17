@@ -135,9 +135,9 @@
 
 * Страница статуса
 * Миграции
-  - `taxonomy_catalog`
-  - `commerce_product_variation`
-  - `commerce_product`
+  - `taxonomy_catalog` - структура каталога
+  - `commerce_product_variation` - вариации
+  - `commerce_product` - товары, зависит от `taxonomy_catalog` и `commerce_product_variation`
 * Модуль ожидает поля как в https://www.drupal.org/project/cmlstarter
   - товар с типом `product` (вместо стандартного `default`)
   - ваиации с типом `variation` (вместо стандартного `default`)
@@ -151,9 +151,10 @@
 * Защита от проскока омбенов `QuickRuner`
 * Запуск с помощью `nohup`
 * Hook EntityBaseFieldInfo
-  - добавляет к сущности `commerce_product_variation` поле 'product_uuid' для сохранения информации о товаре и быстрого его поиска
+  - добавляет к сущности `commerce_product_variation` поле 'product_uuid'
+  - поле необходимо для поиска по `=` вместо `%LIKE%` 
 * Hook CommerceProductInsert
-  - пересохранение товара при первичном его создании
+  - пересохранение товара при первичном его создании, для правки вариаций
 
 ## Кастомные решения
 
