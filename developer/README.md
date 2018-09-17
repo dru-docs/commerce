@@ -12,7 +12,7 @@
   - `login`, `ip`, `created`,	`changed` - параметры обмена
 * Работа с сущностью
   - views со списком сущностей `/admin/structure/cml`
-  - просмотрщик каталога `/admin/structure/cml/{ID}/catalog`
+  - просмотрщик каталога `/admin/structure/cml/{ID}/catalog` и другой таксономии
   - просмотрщик товаров `/admin/structure/cml/{ID}/product`
   - просмотрщик вариаций `/admin/structure/cml/{ID}/product-variaton`
 * Крон и сервис `cmlapi.cleaner`:
