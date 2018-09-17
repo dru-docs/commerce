@@ -148,7 +148,8 @@
   - `taxonomy_catalog` - структура каталога
   - `commerce_product_variation` - вариации
   - `commerce_product` - товары, зависит от `taxonomy_catalog` и `commerce_product_variation`
-* Модуль ожидает поля как в https://www.drupal.org/project/cmlstarter
+* Модуль ожидает конфигурацию как в https://www.drupal.org/project/cmlstarter
+  - магазин с id=1
   - товар с типом `product` (вместо стандартного `default`)
   - ваиации с типом `variation` (вместо стандартного `default`)
   - словарь таксономии `catalog` (для сохранения каталога, можно изменить в настройках модуля)
