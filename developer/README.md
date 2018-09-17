@@ -11,7 +11,11 @@ CmlAPI https://www.drupal.org/project/cmlapi
   - `type` - тип обмена [catalog|sale]
   - `field_file` - переданные во время обмена файлы, кроме картинок
   - `login`, `ip`, `created`,	`changed` - параметры обмена
-* Управление сущностями обмена
+* Работа с сущностью
+  - views со списком сущностей `/admin/structure/cml`
+  - просмотрщик каталога `/admin/structure/cml/ID/catalog`
+  - просмотрщик товаров `/admin/structure/cml/ID/product`
+  - просмотрщик вариаций `/admin/structure/cml/ID/product-variaton`
 * Крон
 * Сервис
 * Парсер-сервис
