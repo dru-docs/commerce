@@ -6,7 +6,7 @@
 CmlAPI https://www.drupal.org/project/cmlapi
 
 * Сущность "обмен" `cml`: 
-  - `uuid` - кука обмена для 1С
+  - `uuid` = `cookies` обмена для 1С
   - `state` - статус обмена  [zip|new|progress|success|busy|failure]
   - `type` - тип обмена [catalog|sale]
   - `field_file` - переданные во время обмена файлы, кроме картинок
