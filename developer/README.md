@@ -80,20 +80,21 @@
 
 ### Cml Exchange
 Обмен файлами с 1С https://www.drupal.org/project/cmlexchange
-* Создаёт сущности `cml` для хранения CommerceML `import.xml` и `offers.xml` 
-* Сохраняет переданные картинки в `public://cml/import_files` и создаёт file-сущности
-* Реализует `pipeline` для прохождения обмена
+* Модуль сущности `cml` для хранения CommerceML `import.xml` и `offers.xml` 
 * Отдаёт информацию о заказах в 1С
 * TODO/неTODO: обновляет заказы на основании полученных данных
-#### Возможности
+
+#### Функционал
 * Реализация протокола
   - Описание протокола тут http://v8.1c.ru/edi/edi_stnd/131/
   - Протокол обмена - это передача файлов, в модуле нет ничего про форматы XML
   - `/cmlexchange` -  адрес для 1С для обмена
   - TODO[?] разделить на уровне адреса полноту данных `/cmlexchange/full` и `/cmlexchange/incremental`
 * Сохранение файлов 
-  - `public://cml/catalog` файлы обмена из 1С, привязываются к `cml|type=catalog`
-  - `public://cml/import_files` - картинки из 1С
+  - Файлы из 1С сохраняются как сущность-файл с флагом FILE_STATUS_PERMANENT TODO[?]
+    - `public://cml/catalog` файлы обмена из 1С, привязываются к `cml|type=catalog`
+    - `public://cml/import_files` - картинки из 1С
+  - При получении файла, если он уже был - обновляется поле `changed`
   - `public://cml/sale` - данные о продажах, которые отдаются в 1С привязываются к `cml|type=sale`
 * Форма на странице обмена (сущность `cml`)
   - Импортировать - запустакет импорт данных с начала
