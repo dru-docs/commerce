@@ -5,7 +5,12 @@
 ### CmlAPI
 CmlAPI https://www.drupal.org/project/cmlapi
 
-* Сущность "обмен"
+* Сущность "обмен" `cml`: 
+  - `uuid` - кука обмена для 1С, 
+  - хранение параметров обмена (дата, 1с логин, IP, тип)
+  - `state` - статус обмена  [zip|new|progress|success|busy|failure]
+  - `type` - тип обмена [catalog|sale]
+  - `field_file`
 * Управление сущностями обмена
 * Крон
 * Сервис
