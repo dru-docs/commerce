@@ -1,5 +1,10 @@
 # Developer
 
+В этом документе описан функционал модулей:
+* Cml API
+* Cml Exchange
+* Cml Migrations
+
 ## Описание функционала.
 
 ### CmlAPI  https://www.drupal.org/project/cmlapi
