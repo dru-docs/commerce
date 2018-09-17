@@ -114,7 +114,7 @@
   - `HOOK_cmlexchange_orders_query_alter()` - если нужно отдавать другие заказы
   - `HOOK_cmlexchange_orders_xml_alter(&$xml)` - если нужно формировать XML заказов по-другому
 * ImportPipeLine - `\Drupal::service('cmlexchange.import_pipeline')`
-  - двигает `cml` по этапам: [zip|new|progress| => success|busy|failure]
+  - двигает `cml` по этапам: [zip|new|progress => success|busy|failure]
   - запуск миграций
     - в настройках можно определить запукать или нет миграции на этапе `mode=import`
     - для запуска миграции данных нужен модуль `Cml Migrations`, его описание ниже
