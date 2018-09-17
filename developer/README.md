@@ -81,7 +81,7 @@
 ### Cml Exchange https://www.drupal.org/project/cmlexchange
 
 Обмен файлами с 1С 
-* Модуль сущности `cml` для хранения CommerceML `import.xml` и `offers.xml` 
+* Модуль создаёт сущности `cml` для хранения файлов из 1С `import.xml` и `offers.xml` 
 * Отдаёт информацию о заказах в 1С
 * TODO/неTODO: обновляет заказы на основании полученных данных
 
