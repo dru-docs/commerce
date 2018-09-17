@@ -12,16 +12,16 @@
   - `login`, `ip`, `created`,	`changed` - параметры обмена
 * Работа с сущностью
   - views со списком сущностей `/admin/structure/cml`
-  - просмотрщик каталога `/admin/structure/cml/ID/catalog`
-  - просмотрщик товаров `/admin/structure/cml/ID/product`
-  - просмотрщик вариаций `/admin/structure/cml/ID/product-variaton`
-  - 
+  - просмотрщик каталога `/admin/structure/cml/{ID}/catalog`
+  - просмотрщик товаров `/admin/structure/cml/{ID}/product`
+  - просмотрщик вариаций `/admin/structure/cml/{ID}/product-variaton`
 * Крон и сервис `cmlapi.cleaner`:
   - удаление пустых обменов (которые не содежрат файлы)
   - удаление старых обменов (старше чем хх)
 * Сервис доступа к обмену `cmlapi.cml`
   - текущий обмен
   - актуальный обмен
+  - выстраивание очереди обменов [?] может стоит перенести в модуль cmlexchange
 * Парсер-сервисы
   - `cmlapi.xml_parser` - разбор XML
   - `cmlapi.parser_catalog` - вытащить из XML-объекта каталоги и другую таксономию
