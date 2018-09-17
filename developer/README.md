@@ -16,7 +16,9 @@ CmlAPI https://www.drupal.org/project/cmlapi
   - просмотрщик каталога `/admin/structure/cml/ID/catalog`
   - просмотрщик товаров `/admin/structure/cml/ID/product`
   - просмотрщик вариаций `/admin/structure/cml/ID/product-variaton`
-* Крон
+* Крон:
+  - удаление пустых обменов (которые не содежрат файлы)
+  - удаление старых обменов (старше чем хх)
 * Сервис
 * Парсер-сервис
 * Реализация 
