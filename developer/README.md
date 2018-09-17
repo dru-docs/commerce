@@ -4,6 +4,8 @@
 
 ### CmlAPI  https://www.drupal.org/project/cmlapi
 
+Вы можете вручную создать сущность обмена, прикрепить к ней файлы `import.xml` и `offers.xml` и получить весь функционал ниже. Для автоматического создания смотри `Cml Exchange` ниже.
+
 * Сущность "обмен" `cml`: 
   - `uuid` = `cookies` обмена для 1С
   - `state` - статус обмена  [zip|new|progress|success|busy|failure]
