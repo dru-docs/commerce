@@ -131,8 +131,31 @@
   - `Импортировать` - запустакет импорт данных с начала
   - `Продолжить` - продолжает движение заказа по `pipeline`
 
-### Cml Migrations
+### Cml Migrations https://www.drupal.org/project/cmlmigrations
 
-Импорт 1С-файлов https://www.drupal.org/project/cmlmigrations
-*
-*
+* Страница статуса
+* Миграции
+  - `taxonomy_catalog`
+  - `commerce_product_variation`
+  - `commerce_product`
+* Настройки
+* Импорт
+* Привязка картинок
+* Привязка вариаций
+* Защита от проскока омбенов `QuickRuner`
+* Запуск с помощью `nohup`
+* Hook EntityBaseFieldInfo
+  - добавляет к сущности `commerce_product_variation` поле 'product_uuid' для сохранения информации о товаре и быстрого его поиска
+* Hook CommerceProductInsert
+  - пересохранение товара при первичном его создании
+
+## Кастомные решения
+
+### В моей выгрузке есть дополнительные поля
+* Правим
+
+### Меня не устраивают данные, которые отдаются в 1С
+
+## Траблшутинг
+* Чаще всего 1С не умеет общаться по https (в наших случаях это 100%)
+* К
