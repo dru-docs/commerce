@@ -2,8 +2,7 @@
 
 ## Описание функционала.
 
-### CmlAPI
-CmlAPI https://www.drupal.org/project/cmlapi
+### CmlAPI  https://www.drupal.org/project/cmlapi
 
 * Сущность "обмен" `cml`: 
   - `uuid` = `cookies` обмена для 1С
