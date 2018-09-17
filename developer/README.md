@@ -138,6 +138,12 @@
   - `taxonomy_catalog`
   - `commerce_product_variation`
   - `commerce_product`
+* Модуль ожидает поля как в https://www.drupal.org/project/cmlstarter
+  - товар с типом `product` (вместо стандартного `default`)
+  - ваиации с типом `variation` (вместо стандартного `default`)
+  - словарь таксономии `catalog` (для сохранения каталога, можно изменить в настройках модуля)
+  - поле товара `field_catalog` - таксономия каталога
+  - поле товара `field_image` - картинка товара (1 штука)
 * Настройки
 * Импорт
 * Привязка картинок
