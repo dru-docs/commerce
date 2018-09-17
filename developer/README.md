@@ -34,7 +34,7 @@
     - дополнительный мапинг задавай сам: в настройках `Product Dop` `Offers Dop`
     - при парсинге `Standart` и `Dop` мапинг складываются
   - мапинг-параметры: `Drupal\cmlapi\Service::prepare($data, $key, $map)`
-    - {type: 'string'} - строчка, `Drupal\cmlapi\Service::prepareString()`
+    - **default** или {type: 'string'} - получение строчки, `Drupal\cmlapi\Service::prepareString()`
     - {type: []} - получение массива, `Drupal\cmlapi\Service::prepareArray()`
     - {type: 'attr'} - получение атрибута, `Drupal\cmlapi\Service::prepareAttribute()`
     - {type: 'keyval'} - данные ключ-значение, `Drupal\cmlapi\Service::prepareKeyVal()`
