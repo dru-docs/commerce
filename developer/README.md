@@ -23,8 +23,17 @@ CmlAPI https://www.drupal.org/project/cmlapi
 * Сервис доступа к обмену `cmlapi.cml`
   - текущий обмен
   - актуальный обмен
-* Парсер-сервис
+* Парсер-сервисы
+  - `cmlapi.xml_parser` - разбор XML
+  - `cmlapi.parser_catalog` - вытащить из XML-объекта каталоги и другую таксономию
+  - `cmlapi.parser_product` - вытащить из XML-объекта товары в соответсвии с мапингом
+  - `cmlapi.parser_offers` - вытащить из XML-объекта оферы в соответствии с мапингом
+* Настройка мапинга для `parser_product` и `parser_offers`
+  - стандартный мапинг
+  - дополнительный мапинг
 * Реализация 
+
+
 
 ### Cml Exchange
 Обмен файлами с 1С https://www.drupal.org/project/cmlexchange
