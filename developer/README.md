@@ -78,8 +78,9 @@
 Цены: {type: []}
 ```
 
-### Cml Exchange
-Обмен файлами с 1С https://www.drupal.org/project/cmlexchange
+### Cml Exchange https://www.drupal.org/project/cmlexchange
+
+Обмен файлами с 1С 
 * Модуль сущности `cml` для хранения CommerceML `import.xml` и `offers.xml` 
 * Отдаёт информацию о заказах в 1С
 * TODO/неTODO: обновляет заказы на основании полученных данных
