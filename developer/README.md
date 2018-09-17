@@ -29,9 +29,10 @@
   - `cmlapi.parser_offers` - вытащить из XML-объекта оферы в соответствии с мапингом
 * Настройка мапинга для `parser_product` и `parser_offers`
   - про маппинг:
-    - стандартный мапинг задаётся при установке, поля `Product Standart` и `Offers Standart`
-    - дополнительный мапинг можно добавить для получения нестандартных полей: в настройках `Product Dop` `Offers Dop`
     - для получения данных из `xml` задаётся с помощю `yml`
+    - стандартный мапинг задаётся при установке, поля `Product Standart` и `Offers Standart`
+    - дополнительный мапинг задавай сам: в настройках `Product Dop` `Offers Dop`
+    - при парсинге `Standart` и `Dop` мапинг складываются
   - мапинг: `Drupal\cmlapi\Service::prepare($data, $key, $map)`
     - {type: 'string'} - строчка, `Drupal\cmlapi\Service::prepareString()`
     - {type: []} - получение массива, `Drupal\cmlapi\Service::prepareArray()`
