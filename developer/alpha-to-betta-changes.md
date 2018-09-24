@@ -13,3 +13,4 @@
 * Используемые бандлы (типы) в соответствии с https://www.drupal.org/project/cmlstarter
   - товар: стало `product` было `default`
   - товар: стало `variation` было `default`
+* Добавилось поле `full` - нужно запустить `entity-updates`
