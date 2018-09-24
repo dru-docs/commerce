@@ -15,6 +15,7 @@
   - `uuid` = `cookies` обмена для 1С
   - `state` - статус обмена  [zip|new|progress|success|busy|failure]
   - `type` - тип обмена [catalog|sale]
+  - `full` - флаг полного обмена, выставляется на основе url'a обращения
   - `field_file` - переданные во время обмена файлы, кроме картинок
   - `login`, `ip`, `created`,	`changed` - параметры обмена
 * Работа с сущностью
