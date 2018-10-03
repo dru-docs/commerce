@@ -1,5 +1,7 @@
 # Типовой магазин Drupal-commerce
 
+* Поддержка: https://t.me/drupal_commerce
+
 ## Задачи
 
 * Выполнять в одно действие:
