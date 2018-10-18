@@ -203,4 +203,5 @@
   - правильнее все товары оставить на сайте, а удалять их только вручную
   - для хорошего SEO товары лучше вобще не удалять - больше товаров = больше трафика
   - из 1С нужно передать явную информацию о удалении товара/вариации, тогда его можно будет снять с публикации немного доработав обмен
-
+* [error]  Error: Call to a member function shouldGenerateTitle() on null in Drupal\commerce_product\Entity\ProductVariation->preSave() (line 349 of /var/www/html/web/modules/contrib/commerce/modules/product/src/Entity/ProductVariation.php) 
+  - у вас отсуствует тип вариаций `variation` - его добавляет модуль https://www.drupal.org/project/cmlstarter, поставьте модуль, или создайте такой тип вариаций вручную на странице `/admin/commerce/config/product-variation-types`
