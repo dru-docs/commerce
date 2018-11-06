@@ -18,8 +18,8 @@
   - запускаем `mlmigrations.pipeline`
   - или завершаем процесс если не требуется импорт данных: отвечаем `success` и ставим `success`-статус у `$cml`
 * `mlmigrations.pipeline` отвечает за миграции `\Drupal::service('mlmigrations.pipeline')->init();`
-  - проверяем наличие незавершённых предыдущий миграций (со статусом `progress`) `$this->query('progress')` и делаем их текущими.
-  - ***TODO:*** (такое ощущение что в этом месте могли что-то забыть)
+  - проверяем наличие незавершённых предыдущий миграций (со статусом `progress`) и делаем их текущими.
+  - ***TODO:*** (такое ощущение что в этом месте  `$this->query('progress')` могли что-то забыть)
   - сохраняем текущий cml-id в `cmlmigrations.settings.runing_cml`
   - получаем информацию о миграциях `$migrations` ($migrations[list] список, $migrations[status] - все миграции в Idle?)
   - переходим в $this->import($cml, $migrations)
